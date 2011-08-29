@@ -1,0 +1,18 @@
+Examples of configuring logging for an app, or not, when using libraries that
+use python's built in logging framework.
+
+nologging 
+    shows what happens when you use a library that uses logging at various levels
+importonly
+    shows when logging is imported, but never used or configured. (a single
+warning is squelchable)
+
+simplelogging
+    logging is imported, and used directly via the class methods, ala "A
+simple example" on http://docs.python.org/howto/logging.html
+
+on_by_default and off_by_default
+    using explict configuration of logging to set the default level, and then
+two different config methods, depending on whether you prefer libraries to
+only be seen if asked for, or seen until asked to be quiet
+
